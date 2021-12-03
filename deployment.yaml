@@ -21,7 +21,7 @@ spec:
       - name: pipeline-docker-registry
       containers:
       - name: goapi
-        image: golang:latest
+        image: golang:1.11
         ports:
         - containerPort: 80
 
