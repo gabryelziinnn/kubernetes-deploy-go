@@ -12,9 +12,9 @@ stages:
 - name: Publish
   steps:
   - publishImageConfig:
-      dockerfilePath: ./Dockerfile
+      dockerfilePath: ./dockerfile
       buildContext: .
-      tag: go-server:${CICD_EXECUTION_SEQUENCE}
+      tag: go-server:${cicd_execution_sequence}
 - name: Deploy
   steps:
   - applyYamlConfig:
