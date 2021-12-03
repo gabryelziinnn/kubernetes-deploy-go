@@ -21,7 +21,7 @@ spec:
       - name: pipeline-docker-registry
       containers:
       - name: goapi
-        image: golang:${cicd_image}:${cicd_execution_sequence}
+        image: golang:1.11
         ports:
         - containerPort: 80
 
